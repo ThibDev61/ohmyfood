@@ -7,27 +7,39 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
 
-    <body>
-        <div></div>
+    <body class="bienvenue">
+            <div class="chargement">
+                <div class="loader">
+                    <span class="lettre">o</span>
+                    <span class="lettre">h</span>
+                    <span class="lettre">m</span>
+                    <span class="lettre">y</span>
+                    <span class="lettre">f</span>
+                    <span class="lettre">o</span>
+                    <span class="lettre">o</span>
+                    <span class="lettre">d</span>
+                </div>
+            </div>
+
         <main>
             <header>
-                <h1>Oh My Food</h1>
+                <img src="img/logos/ohmyfood.png" alt="logo">
             </header>
-        
-        
+             
             <form>
                 <i class="fa-solid fa-location-dot"></i>
                 <input type="search" placeholder="Paris, Belleville">
             </form>    
  
             <section>
-                <h2>Réservez le menu qui vous convient</h2>
+                <h1>Réservez le menu qui vous convient</h1>
                 <p>Découvrez des restaurants d'exception,sélectionnés par nos soins.</p>
                 <a href="#restaurants">Explorer nos restaurants.</a>
             </section>
 
             <section class="fonctionnement">
-                <h3>Fonctionnement</h3>
+                <h2>Fonctionnement</h2>
+
                 <ol>
                     <li>
                         <i class="fa-solid fa-mobile-screen-button"></i>
@@ -47,37 +59,39 @@
             </section>
 
             <article id="restaurants">
-                <h3>Restaurants</h3>
+                <h2>Restaurants</h2>
 
                     <a href="menus/la_palette_du_gout.html">
                         <figure class="carte">
-                            <img src="img/la-palette-du-gout.jpg" class="img_restaurant" alt="Photo d'un plat du restaurant">
+                            <img src="img/resto/la_palette_du_gout.jpg" class="img_restaurant" alt="Photo d'un plat du restaurant">
                             <figcaption>
                                 <h3>La palette du goût</h3>   
                                 <p>Ménilmontant</p> 
                                 <figure>
                                     <i class="fa-regular fa-heart"></i>
-                                </figure>
+                                </figure>                           
+                                <div>Nouveau</div>
                             </figcaption>
                         </figure>
                     </a>
 
-                    <a href="">
+                    <a href="menus/la_note_enchantee.html">
                         <figure class="carte">
-                            <img src="img/la-note-enchantee.jpg" class="img_restaurant" alt="Photo d'un plat du restaurant">
+                            <img src="img/resto/la_note_enchantee.jpg" class="img_restaurant" alt="Photo d'un plat du restaurant">
                             <figcaption>
                                 <h3>La note enchantée</h3>   
                                 <p>Charonne</p> 
                                 <figure>
                                     <i class="fa-regular fa-heart"></i>
                                 </figure>
+                                <div>Nouveau</div>
                             </figcaption>
                         </figure>
                     </a>
 
-                    <a href="">
+                    <a href="menus/a_la_francaise.html">
                         <figure class="carte">
-                            <img src="img/a-la-francaise.jpg" class="img_restaurant" alt="Photo d'un plat du restaurant">
+                            <img src="img/resto/a_la_francaise.jpg" class="img_restaurant" alt="Photo d'un plat du restaurant">
                             <figcaption>
                                 <h3>À la française</h3>   
                                 <p>Cité rouge</p> 
@@ -87,10 +101,10 @@
                             </figcaption>
                         </figure>
                     </a>
-
-                    <a href="">
+                    
+                    <a href="menus/le_delice_des_sens.html">
                         <figure class="carte">
-                            <img src="img/le-delice-du-sens.jpg" class="img_restaurant" alt="Photo d'un plat du restaurant">
+                            <img src="img/resto/le_delice_des_sens.jpg" class="img_restaurant" alt="Photo d'un plat du restaurant">
                             <figcaption>
                                 <h3>Le délice des sens</h3>   
                                 <p>Folie-Méricourt</p> 
