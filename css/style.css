@@ -1,0 +1,199 @@
+@import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');
+
+
+  
+@keyframes chargement { 
+    0% {
+      transform: scaleX(1);
+      opacity: 1;
+    }
+    100% {
+      transform: scaleX(0);
+      opacity: 0;
+    }
+  }
+  
+@keyframes animation {
+    0% {
+        color :#99E2D0;
+    }
+    33% {
+        color :#FF79DA; 
+    }
+    66% {
+        color :#9356DC;
+    }
+    100% {
+        color :#99E2D0;
+    }
+  }
+  
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto";
+  }
+  
+.bienvenue {
+    animation: scroll 5s ease-in-out;
+  }
+  
+.chargement {
+    box-sizing:content-box;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff;
+    animation: chargement 1s 3s ease forwards;
+  }
+
+.loader {
+    margin-bottom: 250px;
+  }
+  
+.lettre {
+    font-size: 45px;
+    font-family: "Shrikhand";
+    letter-spacing: 5px;
+    animation: animation 1.2s linear infinite;
+  }
+  
+.lettre:nth-child(1) {
+    animation-delay: 0.1s;
+  }
+  
+.lettre:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  
+.lettre:nth-child(3) {
+    animation-delay: 0.3s;
+  }
+  
+.lettre:nth-child(4) {
+    animation-delay: 0.4s;
+  }
+  
+.lettre:nth-child(5) {
+    animation-delay: 0.5s;
+  }
+  
+.lettre:nth-child(6) {
+    animation-delay: 0.6s;
+  }
+  
+.lettre:nth-child(7) {
+    animation-delay: 0.7s;
+  }
+
+.img_logo {
+  display: flex;
+  margin: auto;
+  width: 50%;
+}
+
+
+  form {
+      margin: auto;
+      padding: 20px 0 20px 0;
+      width: 100%;
+      box-shadow: inset 0 8px 8px -3px gray;
+      background-color:lightgray;	
+      text-align: center;
+  }
+
+  form input {
+    border: none;
+   background-color:lightgray;
+   text-align: center;
+  }
+
+  .section_bienvenue {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+    padding: 30px 0 50px 0;
+    background-color: rgb(225, 211, 211); 
+  }
+
+  .section_bienvenue h1 {
+    margin: 0;
+    padding-bottom: 10px;
+    width: 90%;
+    text-align: center;
+  }
+  
+  .section_bienvenue p {
+    margin: 0;
+    padding-bottom: 25px;
+    width: 90%;
+    text-align: center;
+  }
+
+  .section_bienvenue a {
+    background-color: transparent;
+   border: none;
+  border-radius: 30px;
+  padding: 18px 30px 18px 30px;
+  text-decoration: none;
+  color: #ffffff;
+  background: linear-gradient(#9356dc,#FF79DA);
+  }
+
+  .fonctionnement h2 {
+    margin: auto;
+    padding-bottom: 10px;
+    width: 90%;
+  }
+
+  .fonctionnement ul {
+    padding-left: 5%;
+  }
+
+  .fonctionnement li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 25px;
+    border-radius: 20px;
+    padding: 8px 0 8px 0;
+    width: 85%;
+    cursor: pointer;
+    box-shadow: 0 3px 3px 3px;
+  }
+  
+
+main article {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0 60px 0;
+  width: 100%;
+  background-color: rgb(225, 211, 211)
+}
+
+.carte {
+  position: relative;
+ display: flex;
+ flex-direction: column;
+ margin: 20px;
+ border-radius: 30px;
+ height: 300px;
+ overflow: hidden;
+ box-shadow: 0 5px 5px 5px grey;
+ background-color: #ffffff;
+}
+
+.carte img {
+  width: 100%;
+ height: 100%;
+ object-fit: cover;
+ overflow: hidden;
+}
