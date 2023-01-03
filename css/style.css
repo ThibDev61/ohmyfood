@@ -170,14 +170,32 @@ ul {
     display: flex;
     flex-direction: row;
     align-items: center;
+    position: relative;
     margin-bottom: 25px;
     border-radius: 20px;
-    padding: 8px 0 8px 0;
+    padding: 8px 12px 8px 0;
     width: 85%;
     cursor: pointer;
     box-shadow: 0 3px 3px 3px;
   }
-  
+
+.numero {
+  position: absolute;
+  left: -16px;
+  border-radius: 100%;
+  padding: 5px 11px;
+  font-size: 22px;
+  background-color: violet;
+  color: #ffffff;
+}
+
+.fonctionnement .fa-solid {
+    margin: 0 20px 0 30px;
+    text-decoration: none;
+    color: var(--grey-icon);
+    font-size: 20px;
+  }
+   
 
 main article {
   display: flex;
