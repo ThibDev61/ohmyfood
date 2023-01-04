@@ -348,6 +348,15 @@ font-family: 'Shrikhand';
   text-transform: uppercase;
  }
 
+ .article_menu h2::after {
+  display: block;
+  border-bottom: 3px solid green;
+  padding-top: 5px;
+  width: 45px;
+  font-size: 0;
+  content: ".";
+}
+
 
  .article_menu ul {
   display: flex;
@@ -372,6 +381,11 @@ background-color: #ffffff;
 cursor: pointer
  }
 
+ .article_menu li:hover,
+ .article_menu li:focus {
+  transform: scale(1.05);
+}
+
 .article_menu h3 {
   margin: 0;
   padding-bottom: 10px;
@@ -392,4 +406,22 @@ cursor: pointer
   margin-left: 20px;
   padding-right: 20px;
   font-weight: bold;
+}
+
+.menu_texte {
+  width: 90%;
+overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap;
+}
+
+.article_menu a {
+  margin: auto;
+  margin-bottom: auto;
+  margin-bottom: 70px;
+ border-radius: 30px;
+ padding: 18px 50px 18px 50px;
+ text-align: center;
+ color: #ffffff;
+background: linear-gradient(#9356dc,#FF79DA);
 }
