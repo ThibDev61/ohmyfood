@@ -307,6 +307,10 @@ footer li {
  width: 50%;
 }
 
+.superposition {
+  height: 288px
+}
+
 .img_menu {
   width: 100%;
   max-height: 500px;
@@ -318,9 +322,8 @@ footer li {
 .article_menu {
   position: relative;
   display: flex;
-  border-radius: 80px 80px 0 0;
-    border-top-left-radius: 80px;
-    border-top-right-radius: 80px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
   background-color: #f1f1f1;
 }
 
@@ -343,7 +346,6 @@ font-family: 'Shrikhand';
 }
 
 .article_menu h2 {
-  padding-left: 20px;
   font-weight: normal;
   text-transform: uppercase;
  }
