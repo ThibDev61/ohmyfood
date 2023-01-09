@@ -119,9 +119,7 @@ body {
   width: 50%;
 }
 
-
-
-  form {
+form {
       margin: auto;
       padding: 20px 0 20px 0;
       width: 100%;
@@ -453,4 +451,79 @@ white-space: nowrap;
  color: #fff;
  background: linear-gradient(var(--primary), var(--secondary));
  box-shadow: 0 5px 5px 5px var(--grey-shadow);
+}
+
+@media (min-width: 768px) {
+ 
+ main article {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  article h2 {
+    padding-bottom: 40px;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  article a {
+    width: 50%;
+  }
+
+  footer h4 {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  footer ul {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  footer li {
+    width: 25%;
+    text-align: center;
+  } 
+
+}
+
+@media (min-width: 992px) {
+
+.fonctionnement h2 {
+ text-align: center;
+}
+
+.fonctionnement ul {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 0%;
+}
+
+.fonctionnement li {
+    width: 25%;
+}
+
+.article_menu {
+  display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+}
+
+.titre_resto {
+  padding-bottom: 30px;
+  width: 100%;
+}
+
+.section_menu {
+  display: flex;
+flex-direction: column;
+margin: 0 auto 0 auto;
+padding-bottom: 30px;
+width: 33%;
+}
+
+
+
+
 }
