@@ -104,20 +104,22 @@ body {
     animation-delay: 0.7s;
   }
 
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  ul {
+    list-style: none;
+  }
+
 .img_logo {
   display: flex;
   margin: auto;
   width: 50%;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
 
-ul {
-  list-style: none;
-}
 
   form {
       margin: auto;
@@ -126,8 +128,7 @@ ul {
       text-align: center;
       box-shadow: inset 0 8px 8px -3px var(--dark-grey-shadow);
 	    background-color: var(--grey-shadow);	
-      
-  }
+    }
 
   form input {
     border: none;
@@ -226,7 +227,7 @@ main article {
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 50px 0 60px 0;
+  padding: 50px 0 10px 0;
   background-color: var(--grey-background);
 }
 
