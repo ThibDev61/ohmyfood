@@ -3,7 +3,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');
 
-
+:root {                               
+  --primary: #9356DC;
+  --secondary: #FF79DA;
+  --tertiary: #99E2D0;
+  --footer-color: #353535ff;
+  --grey-background: #f2f2f2;
+  --grey-shadow: #e7e7e7;
+  --dark-grey-shadow: #c6c6c6;
+  --blue-working: #deebff;
+  --grey-icon: #808080;
+  --green-new: #008766;
+}
   
 @keyframes chargement { 
     0% {
@@ -112,15 +123,17 @@ ul {
       margin: auto;
       padding: 20px 0 20px 0;
       width: 100%;
-      box-shadow: inset 0 8px 8px -3px gray;
-      background-color:lightgray;	
       text-align: center;
+      box-shadow: inset 0 8px 8px -3px var(--dark-grey-shadow);
+	    background-color: var(--grey-shadow);	
+      
   }
 
   form input {
     border: none;
-   background-color:lightgray;
-   text-align: center;
+    text-align: center;
+   background-color: var(--grey-shadow);
+   
   }
 
   .section_bienvenue {
@@ -129,37 +142,38 @@ ul {
     align-items: center;
     margin-bottom: 50px;
     padding: 30px 0 50px 0;
-    background-color: rgb(225, 211, 211); 
+    background-color: var(--grey-background); 
   }
 
   .section_bienvenue h1 {
+    width: 90%;
     margin: 0;
     padding-bottom: 10px;
-    width: 90%;
-    text-align: center;
+     text-align: center;
   }
   
   .section_bienvenue p {
+    width: 90%;
     margin: 0;
     padding-bottom: 25px;
-    width: 90%;
     text-align: center;
   }
 
   .section_bienvenue a {
-    background-color: transparent;
    border: none;
   border-radius: 30px;
   padding: 18px 30px 18px 30px;
   text-decoration: none;
   color: #ffffff;
-  background: linear-gradient(#9356DC ,#FF79DA);
+  background-color: transparent;
+  background: linear-gradient(var(--primary), var(--secondary));
+  box-shadow: 0 5px 5px 5px var(--grey-shadow);
   }
 
   .fonctionnement h2 {
+    width: 90%;
     margin: auto;
     padding-bottom: 10px;
-    width: 90%;
   }
 
   .fonctionnement ul {
@@ -177,6 +191,8 @@ ul {
     width: 85%;
     cursor: pointer;
     box-shadow: 0 3px 3px 3px;
+    box-shadow:0 5px 5px 5px var(--grey-shadow);
+	 background-color: var(--grey-background);
   }
 
 .numero {
@@ -185,7 +201,7 @@ ul {
   border-radius: 100%;
   padding: 5px 11px;
   font-size: 22px;
-  background-color:#9356DC ;
+  background-color: var(--primary);
   color: #ffffff;
 }
 
@@ -198,15 +214,20 @@ ul {
 
 .fonctionnement li:hover,
 .fonctionnement li:focus {
-  background-color: rgb(158, 169, 224);
+  transition: 500ms;
+  background-color: var(--blue-working);
+}
+
+.fonctionnement li:hover i.fa-solid {
+	color: var(--primary);
 }
 
 main article {
   display: flex;
   flex-direction: column;
-  padding: 50px 0 60px 0;
   width: 100%;
-  background-color: rgb(225, 211, 211)
+  padding: 50px 0 60px 0;
+  background-color: var(--grey-background);
 }
 
 article h2 {
@@ -215,14 +236,14 @@ article h2 {
 }
 
 .carte {
-  position: relative;
  display: flex;
  flex-direction: column;
+ position: relative;
  margin: 20px;
  border-radius: 30px;
  height: 300px;
  overflow: hidden;
- box-shadow: 0 5px 5px 5px grey;
+ box-shadow:0 5px 5px 5px var(--grey-shadow);
  background-color: #ffffff;
 }
 
@@ -258,13 +279,13 @@ top: 15px;
 border-radius: 2px;
 padding: 5px 10px;
 font-weight: 600;
-background-color:#99E2D0 ;
-color: green;
+background-color: var(--tertiary);
+color: var(--green-new);
 cursor: pointer;
 }
 
 footer {
-  background-color: black;
+  background-color: var(--footer-color);
   color: white;
 }
 
@@ -324,11 +345,11 @@ footer li {
 
 
 .article_menu {
-  position: relative;
   display: flex;
+  position: relative;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
-  background-color: #f1f1f1;
+  background-color: var(--grey-background);
 }
 
 .titre_resto {
@@ -356,7 +377,7 @@ font-family: 'Shrikhand';
 
  .article_menu h2::after {
   display: block;
-  border-bottom: 3px solid #99E2D0;
+  border-bottom: 3px solid var(--tertiary);
   padding-top: 5px;
   width: 45px;
   font-size: 0;
@@ -373,18 +394,18 @@ padding: 0;
  }
  
  .article_menu li {
-  position: relative;
 display: flex;
 justify-content: space-between;
 align-items: flex-end;
+position: relative;
 margin-bottom: 15px;
 border-radius: 18px;
 padding: 12px 0 15px 12px;
 width: 90%;
-box-shadow: 5px 5px 3px darkgrey;
+box-shadow: 5px 5px 3px var(--dark-grey-shadow);
 overflow: hidden;
 background-color: #ffffff;
-cursor: pointer
+cursor: pointer;
  }
 
  .article_menu li:hover,
@@ -428,6 +449,7 @@ white-space: nowrap;
  border-radius: 30px;
  padding: 18px 50px 18px 50px;
  text-align: center;
- color: #ffffff;
-background: linear-gradient(#9356dc,#FF79DA);
+ color: #fff;
+ background: linear-gradient(var(--primary), var(--secondary));
+ box-shadow: 0 5px 5px 5px var(--grey-shadow);
 }
