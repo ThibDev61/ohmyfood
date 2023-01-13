@@ -310,6 +310,7 @@ color: var(--green-new);
 cursor: pointer;
 }
 
+
 footer {
   background-color: var(--footer-color);
   color: white;
@@ -330,7 +331,15 @@ footer h4 {
   font-family: Shrikhand, cursive;
 }
 
-
+  .fa-heart::before {
+    content: "\f004";
+  transition: color 1s ease-out;
+    }
+    .fa-heart:hover::before{
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+    }
 
 footer li {
   padding-bottom: 10px;
