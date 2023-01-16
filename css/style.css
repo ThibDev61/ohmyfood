@@ -336,7 +336,7 @@ footer h4 {
   transition: color 1s ease-out;
     }
     .fa-heart:hover::before{
-    color: black;
+    color: var(--secondary);
     cursor: pointer;
     font-weight: bold;
     }
@@ -440,10 +440,8 @@ background-color: #ffffff;
 cursor: pointer;
  }
 
- .article_menu li:hover,
- .article_menu li:focus {
-  transform: scale(1.05);
-}
+
+
 
 .article_menu h3 {
   overflow: hidden;
@@ -472,6 +470,19 @@ cursor: pointer;
   width: 90%;
 text-overflow: ellipsis;
 white-space: nowrap;
+}
+
+.menu_validation {
+position: absolute;
+right: -82px;
+top: 0px;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 0 18px 18px 0;
+height: 100%;
+width: 62px;
+background-color: var(--tertiary);
 }
 
 
