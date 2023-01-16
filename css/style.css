@@ -347,7 +347,6 @@ cursor: pointer;
 }
 
 .fa-heart::before {
-    content: "\f004";
   transition: color 1s ease-out;
     }
 
@@ -480,6 +479,11 @@ border-radius: 0 18px 18px 0;
 height: 100%;
 background-color: var(--tertiary);
 transition: 0.3s all linear;
+}
+
+.menu_validation i {
+  font-size: 30px;
+  color: #fff;
 }
 
 .article_menu li:hover {
