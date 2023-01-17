@@ -4,9 +4,9 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');
 
 :root {                               
-  --primary: #9356DC;
-  --secondary: #FF79DA;
-  --tertiary: #99E2D0;
+  --primary: #9356dc;
+  --secondary: #ff79da;
+  --tertiary: #99e2d0;
   --footer-color: #353535;
   --grey-background: #f2f2f2;
   --grey-shadow: #e7e7e7;
@@ -30,16 +30,16 @@
   
 @keyframes animation {
     0% {
-        color :#99E2D0;
+        color :#99e2d0;
     }
     33% {
-        color :#FF79DA; 
+        color :#ff79da; 
     }
     66% {
-        color :#9356DC;
+        color :#9356dc;
     }
     100% {
-        color :#99E2D0;
+        color :#99e2d0;
     }
   }
 
@@ -231,7 +231,7 @@ form {
     padding: 12px 0 15px 12px;
     width: 90%;
     box-shadow: 5px 5px 3px var(--dark-grey-shadow);
-    background-color: #ffffff;
+    background-color: #fff;
     cursor: pointer;
      }
 
@@ -306,7 +306,7 @@ article h2 {
  border-radius: 30px;
  height: 300px;
  box-shadow:0 5px 5px 5px var(--grey-shadow);
- background-color: #ffffff;
+ background-color: #fff;
 }
 
 .carte img {
@@ -527,9 +527,7 @@ transition: 0.3s all linear;
     text-align: center;
   }
 
- 
-
-  footer li {
+ footer li {
     width: 25%;
     text-align: center;
   } 
@@ -570,8 +568,5 @@ margin: 0 auto 0 auto;
 padding-bottom: 30px;
 width: 33%;
 }
-
-
-
 
 }
