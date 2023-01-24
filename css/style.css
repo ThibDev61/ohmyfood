@@ -279,16 +279,6 @@ footer li {
 padding-bottom: 10px;
 }   
 
-.fonctionnement li:hover,
-.fonctionnement li:focus {
-  transition: background-color 500ms;
-   background-color: var(--blue-working);
-}
-     
-.fonctionnement li:hover i.fa-solid {
-  color: var(--primary);
-}
-     
 footer {
 background-color: var(--footer-color);
 color: white;
