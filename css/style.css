@@ -99,7 +99,7 @@
     z-index: 999;
     height: 100vh;
     width: 100%;
-    background-color: #ffffff;
+    background-color: #fff;
     animation: chargement 1s 3s ease forwards;
   }
 
@@ -120,7 +120,7 @@
     border-radius: 50%;
     height: 11px;
     width: 11px;
-    background-color: #ffffff;
+    background-color: #fff;
   } 
 
   .big_needle {
@@ -130,7 +130,7 @@
     border-radius: 30px;
     width: 5px;
     height: 54px;
-    background-color: #ffffff;
+    background-color: #fff;
     animation: rotate_needle 1500ms infinite linear;
     transform-origin: top;
   }
@@ -142,7 +142,7 @@
     border-radius: 30px;
     width: 40px;
     height: 5px;
-    background-color: #ffffff;
+    background-color: #fff;
     animation: rotate_needle 15s infinite linear;
     transform-origin: left;
   }
