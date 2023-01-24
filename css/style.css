@@ -135,6 +135,17 @@
     transform-origin: top;
   }
   
+  .little_needle {
+    position: absolute;
+    top: 58px;
+    right: 21px;
+    border-radius: 30px;
+    width: 40px;
+    height: 5px;
+    background-color: #ffffff;
+    animation: rotate_needle 15s infinite linear;
+    transform-origin: left;
+  }
 
   .loader {
     margin-bottom: 250px;
