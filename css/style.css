@@ -37,16 +37,6 @@
     }
   } 
 
-  
-@keyframes rotate_needle { 
-  0%{
-    transform: rotate(0deg);
-  }
-  100%{
-    transform: rotate(360deg);
-  }
-}
-  
 @keyframes animation {
     0% {
         color :#99e2d0;
@@ -62,10 +52,7 @@
     }
   }
 
-@keyframes bouncer {
-  0% { transform: translateY(0);}
-  100% { transform: translateY(-150px);}
-  }
+
   
 @keyframes progressive { 
     0% {
@@ -78,15 +65,7 @@
     }
   }
   
-  @keyframes none {
-    0% {
-      display: none;
-    }
-  
-    100% {
-      display: block;
-    }
-  }
+
 
   .chargement {
     box-sizing:content-box;
@@ -101,50 +80,6 @@
     width: 100%;
     background-color: #fff;
     animation: chargement 1s 3s ease forwards;
-  }
-
-  .clock {
-    position: relative;
-    margin-bottom: 50px;
-    border: 6px solid var(--tertiary);
-    border-radius: 50%;
-    height: 120px;
-    width: 120px;
-    background: linear-gradient(var(--primary), var(--secondary)); 
-  }
-
-  .center {
-    position: absolute;
-    top: 56px;
-    right: 55px;
-    border-radius: 50%;
-    height: 11px;
-    width: 11px;
-    background-color: #fff;
-  } 
-
-  .big_needle {
-    position: absolute;
-    bottom: 7px;
-    right: 58px;
-    border-radius: 30px;
-    width: 5px;
-    height: 54px;
-    background-color: #fff;
-    animation: rotate_needle 1500ms infinite linear;
-    transform-origin: top;
-  }
-  
-  .little_needle {
-    position: absolute;
-    top: 58px;
-    right: 21px;
-    border-radius: 30px;
-    width: 40px;
-    height: 5px;
-    background-color: #fff;
-    animation: rotate_needle 15s infinite linear;
-    transform-origin: left;
   }
 
   .loader {
@@ -185,35 +120,6 @@
   
 .lettre:nth-child(7) {
     animation-delay: 0.7s;
-  }
-
-
-  .bouncer {
-    display: flex;
-  }
-  
-  .bouncer div {
-    margin: 3px;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    background-color: var(--primary);
-    animation: bouncer 0.5s cubic-bezier(.19, .57, .3, .98) infinite alternate;
-  }
-  
-  .bouncer div:nth-child(2) {
-    animation-delay: 0.1s;
-    opacity: 0.8;
-  }
-  
-  .bouncer div:nth-child(3) {
-    animation-delay: 0.2s;
-    opacity: 0.6;
-  }
-  
-  .bouncer div:nth-child(4) {
-    animation-delay: 0.3s;
-    opacity: 0.4;
   }
 
   body {
@@ -330,7 +236,7 @@ form {
   }
   
   .section_bienvenue p {
-    padding-bottom: 25px;
+    padding-bottom: 20px;
   }
 
 
