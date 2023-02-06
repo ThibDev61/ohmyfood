@@ -1,6 +1,5 @@
 @import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
-@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&Roboto&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');
 
 :root {                               
@@ -75,6 +74,7 @@
   display: flex;
   margin: auto;
   width: 50%;
+  max-width: 300px;
 }
 
 form {
@@ -160,6 +160,12 @@ footer {
 background-color: var(--footer-color);
 color: white;
  }
+
+footer a {
+  display: flex;
+align-items: center;
+height: 20px;
+}
     
 footer h3 {
  margin: 0;
@@ -442,11 +448,15 @@ transition: 0.3s all linear;
     text-align: center;
   }
 
-
- footer li {
-    width: 25%;
+footer li {
     text-align: center;
   } 
+
+.test, .teste {
+  display: flex;
+flex-direction: column;
+width: 25%;
+}
 
 .titre_resto {
   justify-content: left;
