@@ -183,15 +183,31 @@ font-family: Shrikhand, cursive;
 }     
 
 .numero {
-  
-}
+  position: absolute;
+left: -14px;
+background-color: var(--primary);
+border-radius: 50%;
+width: 35px;
+height: 35px;
+  }
 
 .fonctionnement .fa-solid {
     margin:0px 30px 0 35px;
     font-size: 20px;
     text-decoration: none;
-    color: var(--grey-icon);
 } 
+
+.fa-mobile-screen-button, .fa-list, .fa-store {
+  color: var(--grey-icon);
+}
+
+.fa-1, .fa-2, .fa-3 {
+  position: absolute;
+left: -23px;
+color: white;
+height: 20px;
+bottom: 9px;
+}
 
 main article {
   display: flex;
