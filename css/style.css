@@ -72,6 +72,15 @@
   }
 }
 
+@keyframes scroll {
+  0% {
+    overflow-y: hidden;  
+  }
+  100% {
+    overflow-y: auto;
+  }
+}
+
 
 
 .spinner_loader {
@@ -92,15 +101,15 @@
   width: 80px;
   height: 80px;
   transform: rotate(45deg);
-  transform-origin: 40px 40px;
-}
+ }
+
 .lds-heart div {
   top: 32px;
   left: 32px;
   position: absolute;
   width: 32px;
   height: 32px;
-  background: #fcf;
+  background: var(--secondary);
   animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 .lds-heart div:after,
@@ -110,7 +119,7 @@
   display: block;
   width: 32px;
   height: 32px;
-  background: #fcf;
+  background: var(--secondary);
 }
 .lds-heart div:before {
   left: -24px;
@@ -164,7 +173,8 @@
     margin: 0;
     padding: 0;
     font-family: Roboto, sans-serif;
-  }
+   animation: scroll 6s ease-in-out;
+   }
 
   [type="search"] {
    outline: none;
