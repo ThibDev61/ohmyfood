@@ -570,7 +570,6 @@ font-family: Shrikhand, cursive;
 .menu_texte {
   overflow: hidden;
   width: 90%;
-text-overflow: ellipsis;
 white-space: nowrap;
 }
 
@@ -593,23 +592,28 @@ transition: 0.3s all linear;
   color: #fff;
 }
 
-.article_menu li:hover {
+.article_menu li:hover,
+.article_menu li:focus {
   transform: scale(1.05);
 }
 
-.article_menu li:hover .menu_validation {
+.article_menu li:hover .menu_validation,
+.article_menu li:focus .menu_validation {
  transform: translateX(-80px);
 }
 
-.article_menu li:hover b {
+.article_menu li:hover b,
+.article_menu li:focus b {
   transform: translate(-45px);
 }
 
-.article_menu a:hover {
+.article_menu a:hover,
+.article_menu a:focus {
   opacity: 0.7;
 }
 
-.section_bienvenue a:hover {
+.section_bienvenue a:hover, 
+.section_bienvenue a:focus {
   opacity: 0.7;
 }
 
@@ -690,7 +694,7 @@ flex-wrap: wrap;
 .section_menu {
   display: flex;
 flex-direction: column;
-margin: 0 auto 0 auto;
+margin: 0 0 auto;
 padding-bottom: 30px;
 width: 33%;
 }
