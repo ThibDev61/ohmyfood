@@ -25,6 +25,15 @@
   }
 }
 
+@keyframes elipse {
+  0% {
+    width: 90%;
+  }
+  100% {
+    width: 60%;
+  }
+}
+
 @keyframes flash {
   0% {
       color: var(--primary);
@@ -239,6 +248,10 @@ body {
    color: #fff;
    background: linear-gradient(var(--primary), var(--secondary));
    box-shadow: 0 5px 5px 5px var(--grey-shadow);
+  }
+
+  .article_menu li:hover .menu_texte {
+    animation: elipse 500ms ease forwards;
   }
 
 header {
