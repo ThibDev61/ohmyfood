@@ -146,7 +146,7 @@
 
 .lettre {
   color: var(--primary);
-  font-size: 45px;
+  font-size: 40px;
   font-family: "Shrikhand";
   letter-spacing: 5px;
   animation: flash 1.2s linear infinite;
@@ -630,14 +630,25 @@ background-color: #f5edff ;
   color: var(--primary);
 }
 
-.fa-heart::before {/*-- Survol des coeurs --*/
+.fa-heart {/*-- Survol des coeurs --*/
   transition: color 1s ease-out;
     }
 
-.fa-heart:hover::before{/*--Changement de couleur des coeurs--*/
-    color: var(--secondary);
-    cursor: pointer;
-    font-weight: bold;
+.fa-solid.fa-heart {
+  font-size: 35px;
+font-weight: bolder;
+opacity: 0;
+background-clip: text;
+-webkit-background-clip: text;
+color: transparent;
+background-image: linear-gradient(var(--primary), var(--secondary));
+transform: scale(1);
+transition: all 1s ease;
+cursor: pointer;
+}
+
+.fa-solid.fa-heart:hover {
+  opacity: 1;
 }
 
 .article_menu li:hover,
