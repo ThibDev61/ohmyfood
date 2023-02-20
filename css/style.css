@@ -663,6 +663,11 @@ background-color: #f5edff ;
   animation: elipse 500ms ease forwards;
 }
 
+.article_menu li:hover i { /*-- Icone de check qui tourne--*/
+  transition: all 700ms ease;
+  transform: rotate(1turn);
+}
+
 .article_menu a:hover,
 .article_menu a:focus {/*--Opacité lors du survol de "explorer"--*/
   opacity: 0.7;
