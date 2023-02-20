@@ -359,24 +359,18 @@ form input {
 
 .numero {
   position: absolute;
-  left: -14px;
+  left: -11px;
+  border-radius: 100%;
+  padding: 3px 8px;
+  font-size: 18px;
   background-color: var(--primary);
-  border-radius: 50%;
-  width: 35px;
-  height: 35px;
+  color: #fff;
 }
 
  .fa-mobile-screen-button, .fa-list, .fa-store {
   color: var(--grey-icon);
 }
 
-.fa-1, .fa-2, .fa-3 {
-position: absolute;
-left: -23px;
-color: white;
-height: 20px;
-bottom: 9px;
-}
 
 main article {
   display: flex;
@@ -481,17 +475,19 @@ cursor: pointer;
 .titre_resto {
 display: flex;
 align-items: center;
-justify-content: center;
-margin: 0;
-margin-right: 50px;
-padding: 20px;
+margin:-55px 0px 2px 3px;
 font-family: Shrikhand, cursive;
+}
+
+.titre_resto h1 {
+  font-size: 1.75em;
+  margin:20px;
 }
 
 .titre_resto i {
   position: absolute;
  right: 20px;
- font-size: 35px;
+ font-size: 30px;
 }
 
 /*---------- Css des menus des restaurants ----------*/
@@ -685,6 +681,22 @@ background-color: #f5edff ;
     flex-direction: row;
     flex-wrap: wrap;
   }
+
+  .titre_resto {
+    justify-content: center;
+margin: 0;
+margin-right: 50px;
+padding: 20px;
+  }
+
+.titre_resto i {
+  font-size: 35px;
+}
+
+.titre_resto h1 {
+  font-size: 2em;
+margin: 0.67em 0;
+}
 
  .article_menu{
   flex-direction: column;
