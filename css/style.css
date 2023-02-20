@@ -12,9 +12,10 @@
   --dark-grey-shadow: #c6c6c6;
   --grey-icon: #808080;
   --green-new: #008766;
+  --blue-working: #deebff;
 }
 
-@keyframes progressive { 
+@keyframes progressive { /*-- Animation menu --*/
   0% {
     transform: translateY(20px);
     opacity: 0;
@@ -25,7 +26,7 @@
   }
 }
 
-@keyframes elipse {
+@keyframes elipse { /*-- text-overflow des menus lors du hover --*/
   0% {
     width: 90%;
   }
@@ -34,7 +35,7 @@
   }
 }
 
-@keyframes flash {
+@keyframes flash { /*-- Animation des lettres --*/
   0% {
       color: var(--primary);
       text-shadow: 0 0 7px var(--primary);
@@ -49,7 +50,7 @@
   }
 }
 
-@keyframes spinner-off { 
+@keyframes spinner-off { /*-- Animation du loading spinner --*/
   0% {
     transform: scaleX(1);
     opacity: 1;
@@ -60,18 +61,7 @@
   }
 }
 
-@keyframes apparition {
-  0% {
-    transform: scaleX(0);
-    opacity: 0;
-  }
-  100% {
-    transform: scaleX(1);
-    opacity: 1;
-  }
-}
-
-@keyframes coeur {
+@keyframes coeur { /*-- Animation du coeur du loading-spinner --*/
   0% {
     transform: scale(0.95);
   }
@@ -92,7 +82,7 @@
   }
 }
 
-@keyframes scroll {
+@keyframes scroll { /*-- Animation pour pas scroll lors du loading spinner --*/
   0% {
     overflow-y: hidden;  
   }
@@ -101,7 +91,7 @@
   }
 }
 
-
+/*---------- Loading spinner ----------*/
 
 .spinner_loader {
   position: absolute;
@@ -114,6 +104,8 @@
   align-items: center;
   animation: spinner-off 1s 3s ease forwards;
 }
+
+/*---------- Coeur du loading spinner ----------*/
 
 .coeur {
   display: inline-block;
@@ -149,6 +141,8 @@
   top: -24px;
   border-radius: 50% 50% 0 0;
 }
+
+/*---------- Lettres du loading spinner ----------*/
 
 .lettre {
   color: var(--primary);
@@ -201,6 +195,8 @@ body {
    outline: none;
 }
 
+/*---------- Css des ul ----------*/
+
   ul {
     list-style: none;
   }
@@ -222,7 +218,8 @@ body {
   padding: 0;
    }
 
-   
+   /*---------- Css des liens ----------*/
+
   a {
     color: inherit;
     text-decoration: none;
@@ -250,20 +247,60 @@ body {
    box-shadow: 0 5px 5px 5px var(--grey-shadow);
   }
 
-  .article_menu li:hover .menu_texte {
-    animation: elipse 500ms ease forwards;
+  footer a {
+  display: flex;
+  align-items: center;
+  height: 20px;
   }
 
+/*---------- Css des puces ----------*/
+
+footer li {
+  padding-bottom: 10px;
+  }   
+
+.fonctionnement li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  margin-bottom: 25px;
+  border-radius: 20px;
+  padding: 8px 12px 8px 0;
+  width: 85%;
+  box-shadow:0 5px 5px 5px var(--grey-shadow);
+ background-color: var(--grey-background);
+ cursor: pointer;
+}
+
+.article_menu li {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 15px;
+  border-radius: 18px;
+  padding: 12px 0 15px 12px;
+  width: 90%;
+  box-shadow: 5px 5px 3px var(--dark-grey-shadow);
+  background-color: #fff;
+  cursor: pointer;
+   }
+
+/*----------Css du header ainsi que du logo ohmyfood  ----------*/
+   
 header {
   padding:20px 0;
 }
-
 
 .img_logo {
   display: flex;
   margin: auto;
   max-width: 300px;
 }
+
+/*---------- Css du form et de la barre de recherche ----------*/
 
 form {
       margin: auto;
@@ -273,12 +310,14 @@ form {
 	    background-color: var(--grey-shadow);	
     }
 
-  form input {
+form input {
     border: none;
     text-align: center;
    background-color: var(--grey-shadow);
    
   }
+
+/*---------- Css et mise en place de la section bienvenue----------*/
 
   .section_bienvenue {
     display: flex;
@@ -304,105 +343,35 @@ form {
     padding-bottom: 20px;
   }
 
+/*---------- Css de la section fonctionnement----------*/
 
-  .fonctionnement h2 {
+.fonctionnement h2 {
     margin: auto;
     padding-bottom: 10px;
     width: 90%;
-  }
-
-  .fonctionnement li {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    position: relative;
-    margin-bottom: 25px;
-    border-radius: 20px;
-    padding: 8px 12px 8px 0;
-    width: 85%;
-    box-shadow:0 5px 5px 5px var(--grey-shadow);
-	 background-color: var(--grey-background);
-   cursor: pointer;
-  }
-
-.entrees {
-  animation: progressive 1s ease-in-out both;
-}
-
-.plats {
-  animation: progressive 1s 0.5s ease-in-out both;
-}
-
-.desserts {
-  animation: progressive 1s 1s ease-in-out both;
-}
-
-  .article_menu li {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    position: relative;
-    overflow: hidden;
-    margin-bottom: 15px;
-    border-radius: 18px;
-    padding: 12px 0 15px 12px;
-    width: 90%;
-    box-shadow: 5px 5px 3px var(--dark-grey-shadow);
-    background-color: #fff;
-    cursor: pointer;
-     }
-
-footer li {
-padding-bottom: 10px;
-}   
-
-footer {
-background-color: var(--footer-color);
-color: white;
- }
-
-footer a {
-  display: flex;
-align-items: center;
-height: 20px;
-}
-    
-footer h3 {
- margin: 0;
-padding: 30px 0 20px 36px;
-font-size: 20px;
-font-family: Shrikhand, cursive;
-}
-    
-    
-footer h4 {
-margin: 0;
-padding: 30px 0 20px 36px;
-font-size: 20px;
-font-family: Shrikhand, cursive;
-}     
-
-.numero {
-  position: absolute;
-left: -14px;
-background-color: var(--primary);
-border-radius: 50%;
-width: 35px;
-height: 35px;
   }
 
 .fonctionnement .fa-solid {
     margin:0px 30px 0 35px;
     font-size: 20px;
     text-decoration: none;
-} 
+}   
 
-.fa-mobile-screen-button, .fa-list, .fa-store {
+.numero {
+  position: absolute;
+  left: -14px;
+  background-color: var(--primary);
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+}
+
+ .fa-mobile-screen-button, .fa-list, .fa-store {
   color: var(--grey-icon);
 }
 
 .fa-1, .fa-2, .fa-3 {
-  position: absolute;
+position: absolute;
 left: -23px;
 color: white;
 height: 20px;
@@ -421,6 +390,8 @@ article h2 {
   margin: auto;
   width: 85%;
 }
+
+/*---------- Css des cards des restaurants dans l'index ----------*/
 
 .carte {
  display: flex;
@@ -447,12 +418,12 @@ article h2 {
 }
 
 .carte p {
-  margin: 5px 0 0 15px;
-  color:black;
+ margin: 5px 0 0 15px;
+ color:black;
 }
 
 .carte i {
-  position: absolute;
+position: absolute;
  right: 30px;
  bottom: 30px;
  font-size: 35px;
@@ -460,7 +431,7 @@ article h2 {
 }
 
 .nouveau {
-  position: absolute;
+position: absolute;
 right: 15px;
 top: 15px;
 border-radius: 2px;
@@ -471,23 +442,7 @@ color: var(--green-new);
 cursor: pointer;
 }
 
-.fa-heart::before {
-  transition: color 1s ease-out;
-    }
-
-.fa-heart:hover::before{
-    color: var(--secondary);
-    cursor: pointer;
-    font-weight: bold;
-}
-
-.fa-utensils {
- padding-right: 15px;
-}
-
-.fa-handshake {
-  padding-right: 10px;
-}
+/*---------- Header des pages restaurant ----------*/
 
 .header_menu {
   position: relative;
@@ -508,6 +463,8 @@ cursor: pointer;
  width: 50%;
 }
 
+/*----------Css de l'image des restaurants dans les pages restaurant ----------*/
+
 .superposition {
   height: 288px
 }
@@ -519,9 +476,11 @@ cursor: pointer;
   object-fit: cover;
 }
 
+/*---------- Css des noms des restaurants ainsi que du coeur qui les accompagne dans les pages restaurant ----------*/
+
 .titre_resto {
-  display: flex;
-  align-items: center;
+display: flex;
+align-items: center;
 justify-content: center;
 margin: 0;
 margin-right: 50px;
@@ -534,6 +493,8 @@ font-family: Shrikhand, cursive;
  right: 20px;
  font-size: 35px;
 }
+
+/*---------- Css des menus des restaurants ----------*/
 
 .article_menu {
   display: flex;
@@ -586,8 +547,39 @@ font-family: Shrikhand, cursive;
 white-space: nowrap;
 }
 
+/*---------- Css du footer (commun à toutes les pages)----------*/
+
+footer {
+background-color: var(--footer-color);
+color: white;
+}
+  
+footer h3 {
+margin: 0;
+padding: 30px 0 20px 36px;
+font-size: 20px;
+font-family: Shrikhand, cursive;
+}
+      
+footer h4 {
+  margin: 0;
+  padding: 30px 0 20px 36px;
+  font-size: 20px;
+  font-family: Shrikhand, cursive;
+}    
+
+.fa-utensils {
+    padding-right: 15px;
+   }
+   
+.fa-handshake {
+     padding-right: 10px;
+}
+
+/*---------- Css du check lors du survol des cartes de menu ----------*/
+
 .menu_validation {
-  display: flex;
+display: flex;
 justify-content: center;
 align-items: center;
 position: absolute;
@@ -605,9 +597,41 @@ transition: 0.3s all linear;
   color: #fff;
 }
 
+/*---------- Animation des menus lors du chargement des pages restaurant ----------*/
+
+.entrees {
+  animation: progressive 1s ease-in-out both;
+}
+
+.plats {
+  animation: progressive 1s 0.5s ease-in-out both;
+}
+
+.desserts {
+  animation: progressive 1s 1s ease-in-out both;
+}
+
+/*---------- Animation lors du survol ----------*/
+
+.fa-heart::before {
+  transition: color 1s ease-out;
+    }
+
+.fa-heart:hover::before{
+    color: var(--secondary);
+    cursor: pointer;
+    font-weight: bold;
+}
+
 .article_menu li:hover,
 .article_menu li:focus {
   transform: scale(1.05);
+}
+
+.fonctionnement li:hover,
+.fonctionnement li:focus {
+transition: 500ms;
+background-color: var(--blue-working);
 }
 
 .article_menu li:hover .menu_validation,
@@ -620,6 +644,25 @@ transition: 0.3s all linear;
   transform: translate(-45px);
 }
 
+.article_menu li:hover .menu_texte {
+  animation: elipse 500ms ease forwards;
+}
+
+.fonctionnement li:hover .fa-mobile-screen-button, 
+.fonctionnement li:focus .fa-mobile-screen-button {
+  color: var(--primary);
+}
+
+.fonctionnement li:hover  .fa-solid.fa-list,
+.fonctionnement li:focus  .fa-solid.fa-list {
+  color: var(--primary);
+}
+
+.fonctionnement li:hover  .fa-solid.fa-store,
+.fonctionnement li:focus .fa-solid.fa-store {
+  color: var(--primary);
+}
+
 .article_menu a:hover,
 .article_menu a:focus {
   opacity: 0.7;
@@ -630,7 +673,6 @@ transition: 0.3s all linear;
   opacity: 0.7;
 }
 
-
 @media (min-width: 768px) {
  
  main article {
@@ -638,10 +680,12 @@ transition: 0.3s all linear;
     flex-direction: row;
     flex-wrap: wrap;
   }
-.article_menu{
+
+ .article_menu{
   flex-direction: column;
 }
-  article h2 {
+  
+article h2 {
     padding-bottom: 40px;
     font-size: 30px;
     margin-left: 38px;
@@ -654,9 +698,7 @@ transition: 0.3s all linear;
     padding-right: 100px;
   }
 
-
-
-  article a {
+article a {
     width: 50%;
   }
 
@@ -668,7 +710,6 @@ transition: 0.3s all linear;
 footer li {
     text-align: center;
   } 
-
 
 .titre_resto {
   justify-content: left;
