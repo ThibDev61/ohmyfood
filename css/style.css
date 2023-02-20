@@ -187,11 +187,11 @@ body {
     font-family: Roboto, sans-serif;
 }
 
-.accueil{
+.accueil{/* Pas de scroll possible pendant le loading spinner*/
   animation: scroll 6s ease-in-out;
 }
 
-  [type="search"] {
+  [type="search"] {/* Pas de bordure autour de la barre de recherche*/
    outline: none;
 }
 
@@ -616,7 +616,7 @@ transition: 0.3s all linear;
 .fonctionnement li:hover,
 .fonctionnement li:focus {/*-- survol des li du fonctionnement --*/
 transition: 500ms;
-background-color: var(--blue-working);
+background-color: #f5edff ;
 }
 
 .fonctionnement li:hover .fa-mobile-screen-button, 
