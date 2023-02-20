@@ -613,63 +613,63 @@ transition: 0.3s all linear;
 
 /*---------- Animation lors du survol ----------*/
 
-.fa-heart::before {
+.fonctionnement li:hover,
+.fonctionnement li:focus {/*-- survol des li du fonctionnement --*/
+transition: 500ms;
+background-color: var(--blue-working);
+}
+
+.fonctionnement li:hover .fa-mobile-screen-button, 
+.fonctionnement li:focus .fa-mobile-screen-button {/*--Changement de couleur icone--*/
+  color: var(--primary);
+}
+
+.fonctionnement li:hover  .fa-solid.fa-list,
+.fonctionnement li:focus  .fa-solid.fa-list {/*--Changement de couleur icone--*/
+  color: var(--primary);
+}
+
+.fonctionnement li:hover .fa-solid.fa-store,
+.fonctionnement li:focus .fa-solid.fa-store {/*--Changement de couleur icone--*/
+  color: var(--primary);
+}
+
+.fa-heart::before {/*-- Survol des coeurs --*/
   transition: color 1s ease-out;
     }
 
-.fa-heart:hover::before{
+.fa-heart:hover::before{/*--Changement de couleur des coeurs--*/
     color: var(--secondary);
     cursor: pointer;
     font-weight: bold;
 }
 
 .article_menu li:hover,
-.article_menu li:focus {
+.article_menu li:focus { /*-- survol des plats --*/
   transform: scale(1.05);
 }
 
-.fonctionnement li:hover,
-.fonctionnement li:focus {
-transition: 500ms;
-background-color: var(--blue-working);
-}
-
 .article_menu li:hover .menu_validation,
-.article_menu li:focus .menu_validation {
+.article_menu li:focus .menu_validation {/*--Animation du "check" lors du survol des plats--*/
  transform: translateX(-80px);
 }
 
 .article_menu li:hover b,
-.article_menu li:focus b {
+.article_menu li:focus b {/*-- Décalage du prix lors du survol et de l'animation check --*/
   transform: translate(-45px);
 }
 
-.article_menu li:hover .menu_texte {
+.article_menu li:hover .menu_texte {/*-- Gestion du text-overflow:ellipsis lors de l'animation check --*/
   animation: elipse 500ms ease forwards;
 }
 
-.fonctionnement li:hover .fa-mobile-screen-button, 
-.fonctionnement li:focus .fa-mobile-screen-button {
-  color: var(--primary);
-}
-
-.fonctionnement li:hover  .fa-solid.fa-list,
-.fonctionnement li:focus  .fa-solid.fa-list {
-  color: var(--primary);
-}
-
-.fonctionnement li:hover  .fa-solid.fa-store,
-.fonctionnement li:focus .fa-solid.fa-store {
-  color: var(--primary);
-}
-
 .article_menu a:hover,
-.article_menu a:focus {
+.article_menu a:focus {/*--Opacité lors du survol de "explorer"--*/
   opacity: 0.7;
 }
 
 .section_bienvenue a:hover, 
-.section_bienvenue a:focus {
+.section_bienvenue a:focus {/*--Opacité lors du survol de "commander"--*/
   opacity: 0.7;
 }
 
