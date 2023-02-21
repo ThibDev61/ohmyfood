@@ -486,12 +486,12 @@ font-family: Shrikhand, cursive;
 
 .titre_resto i {
   position: absolute;
- right: 20px;
- font-size: 30px;
+  right: 20px;
+  font-size: 30px;
 }
 
-.titre_resto .fa-solid.fa-heart {
- font-size: 30px;
+header .fa-solid.fa-heart {
+  font-size: 30px;
 }
 
 /*---------- Css des menus des restaurants ----------*/
@@ -689,6 +689,7 @@ cursor: pointer;
   opacity: 0.7;
 }
 
+
 @media (min-width: 768px) {
  
  main article {
@@ -704,9 +705,13 @@ margin-right: 50px;
 padding: 20px;
   }
 
-.titre_resto i {
-  font-size: 35px;
-}
+  .titre_resto i {
+    font-size: 35px;
+  }
+
+header .fa-solid.fa-heart {
+    font-size: 35px;
+  }
 
 .titre_resto h1 {
   font-size: 2em;
