@@ -94,9 +94,9 @@
 /*---------- Loading spinner ----------*/
 
 .spinner_loader {
-  position: absolute;
+  position: fixed;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background: #fff;
   z-index: 999;
   display: flex; 
@@ -119,8 +119,8 @@
   top: 32px;
   left: 32px;
   position: absolute;
-  width: 32px;
-  height: 32px;
+  width: 16px;
+  height: 16px;
   background: var(--secondary);
   animation: coeur 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
 }
@@ -129,16 +129,16 @@
   content: " ";
   position: absolute;
   display: block;
-  width: 32px;
-  height: 32px;
+  width: 16px;
+  height: 16px;
   background: var(--secondary);
 }
 .coeur div:before {
-  left: -24px;
+  left: -10px;
   border-radius: 50% 0 0 50%;
 }
 .coeur div:after {
-  top: -24px;
+  top: -10px;
   border-radius: 50% 50% 0 0;
 }
 
@@ -146,7 +146,7 @@
 
 .lettre {
   color: var(--primary);
-  font-size: 40px;
+  font-size: 1.5rem;
   font-family: "Shrikhand";
   letter-spacing: 5px;
   animation: flash 1.2s linear infinite;
