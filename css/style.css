@@ -490,6 +490,10 @@ font-family: Shrikhand, cursive;
  font-size: 30px;
 }
 
+.titre_resto .fa-solid.fa-heart {
+ font-size: 30px;
+}
+
 /*---------- Css des menus des restaurants ----------*/
 
 .article_menu {
